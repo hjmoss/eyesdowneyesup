@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 function iconChange() {
   setTimeout(function(){
-    document.getElementById("icon").href = "/down.svg";
+    document.getElementById("icon").href = process.env.PUBLIC_URL + "/down.svg";
   }, 0);
 
   setTimeout(function(){
-    document.getElementById("icon").href = "/up.svg";
+    document.getElementById("icon").href = process.env.PUBLIC_URL + "/up.svg";
   }, 500);
 }
 
