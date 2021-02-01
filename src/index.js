@@ -4,6 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function iconChange() {
+  setTimeout(function(){
+    document.getElementById("icon").href = "/down.svg";
+  }, 0);
+
+  setTimeout(function(){
+    document.getElementById("icon").href = "/up.svg";
+  }, 500);
+}
+
+  // window.onload = function() {
+setInterval(function() {
+  iconChange();
+}, 1000);
+  // };
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
